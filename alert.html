@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+</head>
+<body>
+<script>
+  const masuk = confirm("Anda yakin mau masuk?");
+
+  if (masuk) {
+    const nama = confirm ("yakin banget masuk?");
+    const name = prompt("Masukkan nama kamu di sini:");
+    alert(`Hello ${name}`);
+    const nilai = prompt("Input nilai kamu di sini (0-100):");
+
+    if (nilai >= 91 && nilai <= 100) {
+      alert(`Hai ${name}, nilai kamu adalah ${nilai} (Sangat Kompeten)`);
+    } else if (nilai >= 80 && nilai < 91) {
+      alert(`Hai ${name}, nilai kamu adalah ${nilai} (Kompeten)`);
+    } else if (nilai >= 61 && nilai < 80) {
+      alert(`Hai ${name}, nilai kamu adalah ${nilai} (Cukup Kompeten)`);
+    } else if (nilai >= 0 && nilai < 61) {
+      alert(`Hai ${name}, nilai kamu adalah ${nilai} (Kurang Kompeten)`);
+    } else {
+      alert(`Hai ${name}, nilai kamu tidak valid`);
+    }
+  } else {
+    alert("Bye bye!");
+  }
+</script>
+</body>
+</html>
