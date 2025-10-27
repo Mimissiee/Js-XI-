@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz2</title>
+</head>
+<body>
+    <script>
+        let pilihan1 = parseFloat(prompt("Masukkan nilai pertama:"));
+        let pilihan2 = parseFloat(prompt("Masukkan nilai kedua:"));
+
+        let pilihan = prompt("Pilih:\n1. Luas Persegi\n2. Luas Segitiga");
+
+        let hasil;
+
+        switch (pilihan) {
+            case "1":
+                hasil = pilihan1 * pilihan2;
+                document.write("<p>Luas Persegi adalah = " + hasil + "</p>");
+                break;
+
+            case "2":
+                hasil = 0.5 * pilihan1 * pilihan2;
+                document.write("<p>Luas Segitiga adalah = " + hasil + "</p>");
+                break;
+
+            default:
+                document.write("<p>Tidak ada pilihan.</p>");
+                break;
+        }
+    </script>
+</body>
+</html>
