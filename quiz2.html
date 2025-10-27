@@ -10,23 +10,23 @@
         let pilihan1 = parseFloat(prompt("Masukkan nilai pertama:"));
         let pilihan2 = parseFloat(prompt("Masukkan nilai kedua:"));
 
-        let pilihan = prompt("Pilih:\n1. Luas Persegi\n2. Luas Segitiga");
+        let pilihan = prompt("Pilih:\n 1. Luas Persegi\n 2. Luas Segitiga");
 
         let hasil;
 
         switch (pilihan) {
             case "1":
                 hasil = pilihan1 * pilihan2;
-                document.write("<p>Luas Persegi adalah = " + hasil + "</p>");
+                alert("Luas Persegi adalah = " + hasil);
                 break;
 
             case "2":
                 hasil = 0.5 * pilihan1 * pilihan2;
-                document.write("<p>Luas Segitiga adalah = " + hasil + "</p>");
+                alert("Luas Segitiga adalah = " + hasil);
                 break;
 
             default:
-                document.write("<p>Tidak ada pilihan.</p>");
+                alert("Pilihan tidak valid!");
                 break;
         }
     </script>
